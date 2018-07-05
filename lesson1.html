@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style type="text/css">
+	section{
+		margin: 0 auto;
+		text-align: center;
+	}
+	#bar{
+		margin: 0 auto;
+		background-color: lightblue;
+		height:10px;
+		width: 0px;
+		transition: all 1s;
+	}
+
+</style>
+<body>
+<section>
+	<div id="title">前端学院</div>
+	<div id="bar"></div>
+	<button id="btn">切换样式</button>
+</section>
+
+</body>
+</html>
+<script type="text/javascript">
+	let btn=document.getElementById("btn")
+	let title=document.getElementById("title")
+	let bar=document.getElementById("bar")
+	btn.onclick=function(){
+		title.style.color="lightblue"
+		bar.style.width="100px"
+	}
+	btn.onmouseout=function(){
+		title.style.color="black"
+		bar.style.width="0"
+	}
+</script>
